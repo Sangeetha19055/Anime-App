@@ -49,7 +49,7 @@ async function getAnime(find) {
         displayAnime(initial_datas.results);
     }
     catch (err) {
-        document.querySelector(".image-conatine").append("Details Cannot be  Founded");
+        document.querySelector(".image").append("Details Cannot be  Founded");
     }
 }
 
