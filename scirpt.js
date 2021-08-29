@@ -19,6 +19,7 @@ function Topnav_And_Form() {
 }
 Topnav_And_Form();
 
+//------------------------ searching Anime name in the search box ----------------------
 function searchAnime() {
     let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
@@ -26,7 +27,7 @@ function searchAnime() {
     inputtext.value = "";
 }
 
-//setting  initial API to be loaded
+//-------------------------- setting  initial API to be loaded ---------------------------
 async function getAnime(find) {
     try {
         const data = await fetch(`${apiurl}/search/anime?q=${find}&page=1`);
@@ -37,11 +38,10 @@ async function getAnime(find) {
     }
     catch (err) {
         // window.alert("error");
-        // console.log(err);
-        // document.body.append("Details Cannot be  Founded");
     }
 }
 
+//-------------------------- displayAnime  ---------------------------
 function displayAnime(anime) {
     for (let i = 0; i <= anime.length; i++) {
         //anime card
@@ -58,11 +58,8 @@ function displayAnime(anime) {
                   <p><strong>Type:</strong>          ${anime[i].type}</p>    
                   <p><strong>Rating:</strong> <i class="fas fa-star"></i> ${anime[i].score}</p> 
                 </div>
-       </div>
-
-`;
+       </div>`;
         document.querySelector(".image-conatiner").append(image_box);
     }
-
 }
 
