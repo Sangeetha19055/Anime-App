@@ -2,13 +2,12 @@ const apiurl = "https://api.jikan.moe/v3";
 
 //------------------------  Topnav anf from function  ----------------------
 function Topnav_And_Form() {
-    // creating navbar 
+    //navbar 
     const nav = document.createElement("nav");
     const h1 = document.createElement("h1");
     h1.textContent = "Anime App";
     h1.setAttribute("class", "title");
     nav.append(h1);
-    // creating form 
     const formdiv = document.createElement("div");
     formdiv.setAttribute("class", "conatiner");
     formdiv.innerHTML = `
@@ -26,15 +25,14 @@ function searchAnime(event) {
     event.preventDefault();
     let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
+    // getAnime(tobefindtext);
    
-    if(tobefindtext.length < 5 )
+    if(tobefindtext.length < 3)
     {
-        alert("Please Enter the name to find!!!");
-      }
-    else
-    {
+        window.alert("Enter more than 3 characters");
+      }else{
         getAnime(tobefindtext);
-     }
+      }
       inputtext.value = "";
 }
 
@@ -71,8 +69,11 @@ function displayAnime(anime) {
                   <p><strong>Type:</strong>          ${anime[i].type}</p>    
                   <p><strong>Rating:</strong> <i class="fas fa-star"></i> ${anime[i].score}</p> 
                 </div>
-       </div>`;
+       </div>
+
+`;
         document.querySelector(".image-conatiner").append(image_box);
     }
+
 }
 
