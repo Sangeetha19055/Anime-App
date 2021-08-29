@@ -58,9 +58,6 @@ nav .title {
     gap: 30px;
     padding: 10px;
     margin-top: 60px;
-
-
-
 }
 
 .image-conatiner .image {
@@ -71,8 +68,6 @@ nav .title {
     position: relative;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-
-
 }
 
 .image-conatiner .image img {
@@ -84,7 +79,6 @@ nav .title {
 
 .image-conatiner .image:hover img {
     transform: scale(1.1);
-
 }
 
 .card {
@@ -109,7 +103,6 @@ nav .title {
     color:#009999;
 }
 
-
 button {
     padding: 10px 30px;
     border: none;
@@ -132,7 +125,6 @@ button {
 @media screen and (max-width:844px) {
     .conatiner form input {
         width: 100%;
-
     }
 
     button {
