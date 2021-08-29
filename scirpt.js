@@ -26,9 +26,9 @@ function searchAnime(event) {
     event.preventDefault();
     
     let tobefindtext = inputtext.value;
-    // getAnime(tobefindtext);
+
    
-    if(tobefindtext.length === "")
+    if(tobefindtext === "")
     {
         alert("Please Enter the name to find");
       }
