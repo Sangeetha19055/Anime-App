@@ -31,7 +31,8 @@ function searchAnime(event) {
     if(tobefindtext.length === "")
     {
         alert("Please Enter the name to find");
-      }else{
+      }
+    else{
         getAnime(tobefindtext);
       }
      
@@ -75,6 +76,6 @@ function displayAnime(anime) {
 `;
         document.querySelector(".image-conatiner").append(image_box);
     }
-
+inputtext.value="";
 }
 
