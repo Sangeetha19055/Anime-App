@@ -14,7 +14,7 @@ function Topnav_And_Form() {
     formdiv.innerHTML = `
     <form>
     <input type="text" name="search" id="search" placeholder="search">
-    <button type="button" onclick="searchAnime()">search</button>
+    <button type="button" onclick="searchAnime(event)">search</button>
     </form>
     `;
     document.querySelector(".form").append(nav, formdiv);
