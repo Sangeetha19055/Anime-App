@@ -38,7 +38,7 @@ function searchAnime(event) {
     // getAnime(tobefindtext);
    
     if(tobefindtext == ""){
-       alert("please!!! Enter the Name to find Anime 😀 ");
+       alert("please!!! Enter the Name to Find Anime 😀 ");
       }else{
         getAnime(tobefindtext);
       }
