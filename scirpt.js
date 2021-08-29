@@ -36,7 +36,7 @@ function searchAnime(event) {
       {
         getAnime(tobefindtext);
       }
-      inputtext.value = "";
+      
 }
 
 //-------------------------- setting  initial API to be loaded ---------------------------
