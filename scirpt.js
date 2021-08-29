@@ -24,18 +24,16 @@ Topnav_And_Form();
 //------------------------ searching Anime name in the search box ----------------------
 function searchAnime(event) {
     event.preventDefault();
-    
+    let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
-
+    // getAnime(tobefindtext);
    
-    if(tobefindtext.length < 3))
-    {
-        alert("Please Enter the name to find");
-      }
-    else{
+    if(tobefindtext.length < 3){
+        window.alert("Enter more than 3 characters");
+      }else{
         getAnime(tobefindtext);
       }
-     
+      inputtext.value = "";
 }
 
 //-------------------------- setting  initial API to be loaded ---------------------------
