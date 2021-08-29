@@ -1,6 +1,5 @@
 const apiurl = "https://api.jikan.moe/v3";
 
-
 //------------------------  Topnav anf from function  ----------------------
 function Topnav_And_Form() {
     //navbar 
@@ -9,15 +8,17 @@ function Topnav_And_Form() {
     h1.textContent = "Anime App";
     h1.setAttribute("class", "title");
     nav.append(h1);
+    const section = document.createElement("section");
+
     const formdiv = document.createElement("div");
     formdiv.setAttribute("class", "conatiner");
     formdiv.innerHTML = `
-    <form>
-    <input type="text" name="search" id="search" placeholder="search">
-    <button type="button" onclick="searchAnime(event)">search</button>
-    </form>
-    `;
-    document.querySelector(".form").append(nav, formdiv);
+     <form>
+        <input type="text" name="search" id="search" placeholder="search">
+        <button type="button" onclick="searchAnime(event)">search</button>
+     </form>`;
+    section.append(formdiv);
+    document.querySelector(".form").append(nav, section);
 }
 Topnav_And_Form();
 
