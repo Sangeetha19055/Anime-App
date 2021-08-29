@@ -26,16 +26,16 @@ function searchAnime(event) {
     event.preventDefault();
     let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
-    // getAnime(tobefindtext);
+    getAnime(tobefindtext);
    
-    if(tobefindtext == ""))
-    {
-        alert("Enter the name to find");
-     }
-    else
-      {
-        getAnime(tobefindtext);
-      }
+//     if(tobefindtext == ""))
+//     {
+//         alert("Enter the name to find");
+//      }
+//     else
+//       {
+//         getAnime(tobefindtext);
+//       }
       
 }
 
