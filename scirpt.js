@@ -1,12 +1,14 @@
 const apiurl = "https://api.jikan.moe/v3";
 
+//------------------------  Topnav anf from function  ----------------------
 function Topnav_And_Form() {
-    //navbar 
+    // creating navbar 
     const nav = document.createElement("nav");
     const h1 = document.createElement("h1");
     h1.textContent = "Anime App";
     h1.setAttribute("class", "title");
     nav.append(h1);
+    // creating form 
     const formdiv = document.createElement("div");
     formdiv.setAttribute("class", "conatiner");
     formdiv.innerHTML = `
