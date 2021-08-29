@@ -27,7 +27,7 @@ function searchAnime(event) {
     let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
    
-    if(tobefindtext.length === " ")
+    if(tobefindtext.length < 5 )
     {
         alert("Please Enter the name to find!!!");
       }
