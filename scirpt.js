@@ -77,6 +77,6 @@ function displayAnime(anime) {
 `;
         document.querySelector(".image-conatiner").append(image_box);
     }
-inputtext.value="";
+// inputtext.value="";
 }
 
