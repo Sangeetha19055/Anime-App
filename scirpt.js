@@ -22,24 +22,35 @@ function Topnav_And_Form() {
 Topnav_And_Form();
 
 //------------------------ searching Anime name in the search box ----------------------
-function searchAnime() {
+function searchAnime(event) {
+    event.preventDefault();
     let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
-    getAnime(tobefindtext);
-    inputtext.value = "";
+   
+    if(tobefindtext.length === " ")
+    {
+        alert("Please Enter the name to find!!!");
+      }
+    else
+    {
+        getAnime(tobefindtext);
+     }
+      inputtext.value = "";
 }
 
 //-------------------------- setting  initial API to be loaded ---------------------------
 async function getAnime(find) {
     try {
-        const data = await fetch(`${apiurl}/search/anime?q=${find}&page=1`);
+        const data = await fetch(`${apiurl}/search/anime?q=${find}&page=1`,{
+            method: "GET"
+        });
         const initial_datas = await data.json();
         console.log(initial_datas);
         document.querySelector(".image-conatiner").innerHTML = "";
         displayAnime(initial_datas.results);
     }
     catch (err) {
-        // window.alert("error");
+        document.querySelector(".image-conatiner").append("Details Cannot be  Founded");
     }
 }
 
