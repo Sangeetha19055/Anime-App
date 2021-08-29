@@ -1,5 +1,5 @@
 const apiurl = "https://api.jikan.moe/v3";
-var inputtext = document.getElementById("search");
+
 
 //------------------------  Topnav anf from function  ----------------------
 function Topnav_And_Form() {
@@ -26,16 +26,14 @@ function searchAnime(event) {
     event.preventDefault();
     let inputtext = document.getElementById("search");
     let tobefindtext = inputtext.value;
-//     getAnime(tobefindtext);
+    // getAnime(tobefindtext);
    
-    if(tobefindtext == ""))
-    {
-        alert("Enter the name to find");
-     }
-    else
-      {
+    if(tobefindtext == ""){
+       alert("please!!! Enter the name to find anime");
+      }else{
         getAnime(tobefindtext);
       }
+     inputtext.value = "";
       
 }
 
@@ -54,6 +52,7 @@ async function getAnime(find) {
         document.querySelector(".image-conatiner").append("Details Cannot be  Founded");
     }
 }
+
 
 //-------------------------- displayAnime  ---------------------------
 function displayAnime(anime) {
@@ -77,6 +76,6 @@ function displayAnime(anime) {
 `;
         document.querySelector(".image-conatiner").append(image_box);
     }
-// inputtext.value="";
-}
+   
 
+}
