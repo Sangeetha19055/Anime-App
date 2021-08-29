@@ -43,7 +43,7 @@ function searchAnime(event) {
       }else{
         getAnime(tobefindtext);
       }
-     inputtext.value = "";
+ 
       
 }
 
