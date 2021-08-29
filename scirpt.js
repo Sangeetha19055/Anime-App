@@ -27,9 +27,9 @@ function searchAnime(event) {
     let tobefindtext = inputtext.value;
     // getAnime(tobefindtext);
    
-    if(tobefindtext.length < 3)
+    if(tobefindtext.length === "")
     {
-        window.alert("Enter more than 3 characters");
+        alert("Please Enter the name to find");
       }else{
         getAnime(tobefindtext);
       }
