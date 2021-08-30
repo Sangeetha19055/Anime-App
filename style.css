@@ -117,7 +117,8 @@ nav .title {
 
 /* card  style starts here */
 .card {
-    background-color: rgb(249 249 249);
+/*     background-color: rgb(249 249 249); */
+    background-color: rgb(240 245 244);
     width: 350px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 65%);
@@ -138,7 +139,9 @@ nav .title {
 }
 
 .card .content p strong {
-    color: #5b9c0b;
+/*     color: #5b9c0b; */
+    color: #609e14;
+
 }
 
 /* card  style Ends here */
