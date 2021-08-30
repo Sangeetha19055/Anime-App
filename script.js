@@ -38,7 +38,7 @@ function searchAnime(event) {
     // getAnime(tobefindtext);
    
     if(tobefindtext == ""){
-       alert("please!!! Enter the Name to Find Anime 😀 ");
+       alert("please!!! Enter Anime Name to Find Anime 😀");
       }else{
         getAnime(tobefindtext);
       }
@@ -57,7 +57,7 @@ async function getAnime(find) {
         displayAnime(initial_datas.results);
     }
     catch (err) {
-        document.querySelector(".image-conatiner").append("Details Cannot be  Found");
+        document.querySelector(".image-conatiner").append("Details Cannot be  Found 😒.");
     }
 }
 //-------------------------- displayAnime  ---------------------------
