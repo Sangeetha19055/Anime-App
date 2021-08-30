@@ -57,7 +57,7 @@ async function getAnime(find) {
         displayAnime(initial_datas.results);
     }
     catch (err) {
-        document.querySelector(".image-conatiner").append("Details Cannot be  Found 😒.");
+        document.querySelector(".image-conatiner").append("Details Cannot be  Found. 😒");
     }
 }
 //-------------------------- displayAnime  ---------------------------
