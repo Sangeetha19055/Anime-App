@@ -193,8 +193,11 @@ button:hover {
         .image-conatiner .image {
             height: 250px;
             width: 300px;
-      
         }
+        .card .content {
+            height: 230px;
+         }
+        
     }
 
     button {
