@@ -13,7 +13,7 @@ function Topnav_And_Form() {
     
 
     const h1 = document.createElement("h1");
-    h1.textContent = "Anime App";
+    h1.textContent = "Anime";
     h1.setAttribute("class", "title");
     nav.append(img,h1);
 
@@ -57,7 +57,7 @@ async function getAnime(find) {
         displayAnime(initial_datas.results);
     }
     catch (err) {
-        document.querySelector(".form").append("Details Cannot be  Founded");
+        document.querySelector(".image-conatiner").append("Details Cannot be  Founded");
     }
 }
 //-------------------------- displayAnime  ---------------------------
@@ -70,11 +70,11 @@ function displayAnime(animes) {
           <img src=${anime.image_url} alt="image">
         </div>
         <div class="content">
-          <h2>${anime.title}</h2>
+          <h2><strong>Titile:</strong> ${anime.title}</h2>
           <p><strong>Start Date:</strong>    ${new Date(anime.start_date).toDateString()}</p>
           <p><strong>End Date:</strong>      ${new Date(anime.end_date).toDateString()}</p>
-          <p><strong>Type:</strong>          ${anime.type}</p>    
-          <p><strong>Rating:</strong> <i class="fas fa-star"></i> ${anime.score}</p> 
+          <p><strong>Type of series:</strong>          ${anime.type}</p>    
+          <p><strong>IMDB Rating:</strong> <i class="fas fa-star"></i> ${anime.score}</p> 
         </div>
 </div>`;
         document.querySelector(".image-conatiner").append(image_box);
