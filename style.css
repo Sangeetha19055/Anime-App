@@ -26,9 +26,6 @@ body{
 /* navbar  style*/
 nav {
      background: rgb(20 21 20 / 26%);
-     /* for green */
-     /* background: rgb(102 113 95 / 26%); */
-  
     box-shadow: 0 15px 35px rgb(0 0 0 / 5%);
     width: 100%;
     height: 70px;
@@ -126,7 +123,7 @@ nav .title {
 
 .card .content h2 {
     font-size: 17px;
-    color: rgb(252 67 18);
+    color: rgb(254 69 19 / 85%);
 }
 
 .card .content {
@@ -139,9 +136,7 @@ nav .title {
 }
 
 .card .content p strong {
-/*     color: #5b9c0b; */
-    color: #609e14;
-
+    color: #4b7d0e;
 }
 
 /* card  style Ends here */
