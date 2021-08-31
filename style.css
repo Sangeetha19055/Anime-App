@@ -104,7 +104,7 @@ nav .title {
 /* image-container image  img style */
 .image-conatiner .image img {
     height: 250px;
-    width:190px;
+    width:250px;
     /*object-fit: cover; */
     transition: .7s linear;
     border-radius: 8px;
