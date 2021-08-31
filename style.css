@@ -104,10 +104,10 @@ nav .title {
 /* image-container image  img style */
 .image-conatiner .image img {
     height: 250px;
-/*  width: 100%; */
     width:190px;
     object-fit: cover;
     transition: .7s linear;
+    border-radius: 8px;
 }
 
 /* image-container image:hover img style */
