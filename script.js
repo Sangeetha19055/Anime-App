@@ -23,7 +23,7 @@ function Topnav_And_Form() {
     formdiv.setAttribute("class", "conatiner");
     formdiv.innerHTML = `
      <form>
-        <input type="text" name="search" id="search" placeholder="search">
+        <input type="text" name="search" id="search" placeholder="Enter anime name">
         <button type="button" onclick="searchAnime(event)">search</button>
      </form>`;
     
