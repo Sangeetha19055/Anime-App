@@ -45,6 +45,11 @@ function searchAnime(event) {
 
       
 }
+       var inputtext = document.getElementById("search");
+  inputtext.addEventListener("keypress", function(e){
+      if(e.key === "Enter") searchAnime(event);
+  })
+  
 //-------------------------- setting  initial API to be loaded ---------------------------
 async function getAnime(find) {
     try {
@@ -81,4 +86,5 @@ function displayAnime(animes) {
 
     });
 }
+
 
